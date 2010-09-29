@@ -1,8 +1,12 @@
-rodsize = 6;	//threaded/smooth rod diameter in mm
-xaxis = 182.5;	//width of base in mm
-yaxis = 266.5;	//length of base in mm
+include <MCAD/units.scad>
+include <MCAD/bearing.scad>
 
-screwsize = 3;	//bearing bore/screw diameter in mm
+rodsize = 6*mm;	    //threaded/smooth rod diameter
+xaxis = 182.5*mm;	//width of base
+yaxis = 266.5*mm;	//length of base
+
+screwsize = M3;     //bearing bore/screw diameter
+default_bearing = Bearing623;
 bearingsize = 10;	//outer diameter of bearings in mm
 bearingwidth = 4;	//width of bearings in mm
 
