@@ -1,1 +1,1 @@
-from MCAD.test_compile import *
+from MCAD.openscad_testing import *
