@@ -1,14 +1,14 @@
 include <MCAD/units.scad>
-include <MCAD/bearing.scad>
+use <MCAD/bearing.scad>
 
 rodsize = 6*mm;	    //threaded/smooth rod diameter
 xaxis = 182.5*mm;	//width of base
 yaxis = 266.5*mm;	//length of base
 
 screwsize = M3;     //bearing bore/screw diameter
-default_bearing = Bearing623;
-bearingsize = 10;	//outer diameter of bearings in mm
-bearingwidth = 4;	//width of bearings in mm
+default_bearing = 623;
+bearingsize = bearingOuterDiameter(default_bearing);
+bearingwidth = bearingWidth(default_bearing);
 
 rodpitch = rodsize / 6;
 rodnutsize = 0.8 * rodsize;
